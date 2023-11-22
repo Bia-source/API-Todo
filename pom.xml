@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version>
+		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.beatriz</groupId>
@@ -67,10 +67,31 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.1.5</version>
 				<configuration>
 					<skip>true</skip>
+<!--					<mainClass>br.com.beatriz.todo.TodoApplication</mainClass>-->
 				</configuration>
 			</plugin>
+
+<!--			<plugin>-->
+
+<!--				&lt;!&ndash; Building an executable jar &ndash;&gt;-->
+
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-jar-plugin</artifactId>-->
+<!--				<version>3.3.0</version>-->
+<!--				<configuration>-->
+<!--					<archive>-->
+<!--						<manifest>-->
+
+<!--							&lt;!&ndash; give full qualified name of your main class&ndash;&gt;-->
+<!--							<mainClass>br.com.beatriz.todo.TodoApplication</mainClass>-->
+
+<!--						</manifest>-->
+<!--					</archive>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
